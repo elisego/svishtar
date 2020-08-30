@@ -4,10 +4,6 @@
     margin: 0;
     padding: 0;
 }
-.body-index { 
-    background: url("images/4219187_20170704063326451_1_XLARGE.jpg")fixed center;
-    background-size: cover;
-    }
 
 .menu-burger{
     background-color: antiquewhite;
@@ -22,6 +18,12 @@
     opacity:0.7;
 }
 
+main{
+    background: url("images/1-AMEL\ 54\ ISHTAR4.bmp")fixed center;
+    background-size: cover;
+    height: 100vh;
+}
+
 .navBarre{
     display: flex;
     justify-content: space-evenly;
@@ -34,13 +36,11 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 }
 
 .index-title{
-    margin-left: 15%;
-    margin-right: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height:90vh;
+    height:70vh;
 }
 
 .index-title h1, .index-title h3{
@@ -54,6 +54,18 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 
 .index-title h3{
     font-size: 2.5rem;
+}
+
+.sec-video{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec-video video{
+    width: 80%;
 }
 
 /* about us */
