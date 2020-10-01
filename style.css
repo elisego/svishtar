@@ -11,14 +11,14 @@ p{
 
 .menu-burger{
     background-color: #426E86;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Noto Sans SC', sans-serif;
     list-style-type: none;
     top: 0;
     left:0;
     width: 100%;
     position: fixed;
-    line-height: 2.5em;
+    line-height: 2em;
 }
 
 main{
@@ -76,6 +76,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     display: flex;
     justify-content: center;
     align-items:center;
+    margin-top: 1rem;
 }
 
 .sec-footer p{
@@ -260,7 +261,7 @@ img.hover-shadow {
 }
 
 .sec-contact h1{
-    padding-top: 5rem;
+    padding-top: 3rem;
     font-size: 3rem;
     font-family: 'Noto Sans SC', sans-serif;
 }
@@ -284,9 +285,9 @@ img.hover-shadow {
 
 .button{
     background-color: #426E86;
-    font-size: 3rem;
-    margin: 1rem;
-    padding: 1rem;
+    font-size: 2rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
     border-radius: 15px;
 }
 
