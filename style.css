@@ -295,6 +295,14 @@ img.hover-shadow {
     text-decoration:none; 
 }
 
+.info-email a, .info-email a:link, .info-email a:visited, .info-email a:focus, .info-email a:hover, .info-email a:active{
+    color: black;
+}
+
+.info-tel a, .info-tel a:link, .info-tel a:visited, .info-tel a:focus, .info-tel a:hover, .info-tel a:active{
+    color: black;
+}
+
 /*Version mobile */
 @media screen and (max-width: 1024px) {
 
