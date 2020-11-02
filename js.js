@@ -1,3 +1,4 @@
+/*menu burger*/ 
 const burger = document.querySelector('.btn-burger');
 const menu = document.querySelector('.menu-burger');
 
@@ -10,6 +11,7 @@ menu.addEventListener('click', () => {
     menu.classList.toggle('open');
 });
 
+/*galery 1*/ 
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
@@ -46,3 +48,40 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+/*galery 2*/ 
+function openModal2() {
+  document.getElementById("myModal2").style.display = "block";
+}
+
+function closeModal2() {
+  document.getElementById("myModal2").style.display = "none";
+}
+
+var slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
+}
+
+function currentSlide2(n) {
+  showSlides2(slideIndex2 = n);
+}
+
+function showSlides2(n) {
+  var i;
+  var slides2 = document.getElementsByClassName("mySlides2");
+  var dots2 = document.getElementsByClassName("demo");
+  var captionText2 = document.getElementById("caption");
+  if (n > slides2.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = slides2.length}
+  for (i = 0; i < slides2.length; i++) {
+      slides2[i].style.display = "none";
+  }
+  for (i = 0; i < dots2.length; i++) {
+      dots2[i].className = dots2[i].className.replace(" active", "");
+  }
+  slides2[slideIndex2-1].style.display = "block";
+  dots2[slideIndex2-1].className += " active";
+  captionText2.innerHTML = dots2[slideIndex2-1].alt;
+} 

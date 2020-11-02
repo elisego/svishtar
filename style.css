@@ -5,37 +5,68 @@
     padding: 0;
 }
 
+h1{
+    font-size: 3.5rem;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+h2{
+    font-size: 2rem;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+h4{
+    font-size: 1rem;
+    font-style: italic;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
 p{
-    font-size: 3vh;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.menu-burger:first-child{
+    line-height: 1rem;
 }
 
 .menu-burger{
     background-color: #426E86;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Noto Sans SC', sans-serif;
     list-style-type: none;
     top: 0;
     left:0;
     width: 100%;
     position: fixed;
-    line-height: 2em;
 }
 
-main{
-    background: url("images/1-AMEL\ 54\ ISHTAR4.bmp")fixed center;
-    background-size: cover;
-    height: 100vh;
+.display ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: #BBC8CA;
+    font-size: 1.2rem;
+    list-style: none;
 }
 
 .navBarre{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
+    line-height: 3rem;
 }
 
 a, a:link, a:visited, a:focus, a:hover, a:active{
     color: #F8F1E5;
+}
 
+.display ul li a, .display ul li a:link, .display ul li a:visited, .display ul li a:focus, .display ul li a:active{
+    color: black;
 }
 
 .index-title{
@@ -43,20 +74,40 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height:70vh;
+    padding-top: 5rem;
 }
 
-.index-title h1, .index-title h3{
+.index-title h1, h2{
     text-align: center;
-    font-family: 'Noto Sans SC', sans-serif;
 }
 
-.index-title h1{
-    font-size: 5rem;
+.index-title img{
+    height: 70vh;
 }
 
-.index-title h3{
-    font-size: 2.5rem;
+.sec-infos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    margin-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.more-info{
+    grid-column: 1;
+}
+
+.history{
+    grid-column: 1;
+}
+
+.aboutUs{
+    grid-column: 2;
+}
+
+.maintenance{
+    grid-column: 3;
 }
 
 .sec-video{
@@ -66,8 +117,13 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     align-items: center;
     flex-direction: column;
 }
+
+.more-info{
+    margin: 1rem;
+}
+
 .sec-video iframe{
-    width: 70%;
+    width: 53%;
     height: 70vh;
 }
 .sec-footer{
@@ -89,14 +145,8 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     justify-content: center;
     align-items:center;
     flex-direction: column;
-    margin-top: 3.2rem;
+    margin-top: 5rem;
 
-}
-
-.about h1{
-    padding-top: 5rem;
-    font-size: 3rem;
-    font-family: 'Noto Sans SC', sans-serif;
 }
 
 .card-boat{
@@ -112,12 +162,25 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     width: 40%;
 }
 
+.card-boat-text h3{
+    margin-top: 1rem;
+}
+
 .card-boat-image img{
     width: 100%;
     padding: 1rem;
 }
 
 /*Gallery */
+
+.gallery h1{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.gallery h3{
+    margin-left: 6rem;
+}
 
 .row > .column {
   padding: 8px;
@@ -128,9 +191,15 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     justify-content: center;
     align-items:center;
     flex-wrap: wrap;
-    margin-top: 9rem;
     margin-left: 3rem;
     margin-right: 3rem;
+}
+
+.moteur{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 21rem;
 }
 
 .row:after {
@@ -145,7 +214,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 }
 
 /* The Modal (background) */
-.modal {
+.modal, .modal2 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -185,7 +254,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
   cursor: pointer;
 }
 
-.mySlides {
+.mySlides, .mySlides2{
   display: none;
 }
 
@@ -234,15 +303,6 @@ img {
   color: white;
 }
 
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
 img.hover-shadow {
   transition: 0.3s;
 }
@@ -262,32 +322,27 @@ img.hover-shadow {
 
 .sec-contact h1{
     padding-top: 3rem;
-    font-size: 3rem;
-    font-family: 'Noto Sans SC', sans-serif;
-}
 
-.sec-contact h3{
-    font-size: 3rem;
+    font-family: 'Noto Sans SC', sans-serif;
 }
 
 .contact-info{
     display: flex;
-    justify-content: center;
     align-items:center;
     justify-content: space-around;
 }
 
 .sec-button{
     display: flex;
-    justify-content: center;
     align-items:center; 
+    justify-content: space-around;
 }
 
 .button{
     background-color: #426E86;
-    font-size: 2rem;
-    margin: 1.5rem;
-    padding: 1.5rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
     border-radius: 15px;
 }
 
@@ -303,8 +358,27 @@ img.hover-shadow {
     color: black;
 }
 
+.map{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.map p{
+    margin-right: 2rem;
+}
+
+.map a, .map a:link, map a:visited, .map a:focus, map a:hover, map a:active{
+    color: black;
+}
+
 /*Version mobile */
 @media screen and (max-width: 1024px) {
+
+    h1{
+        font-size: 2rem;
+        font-family: 'Noto Sans SC', sans-serif;
+    }
 
     /* menu burger */
     .btn-burger {
@@ -366,6 +440,7 @@ img.hover-shadow {
 
     .menu-burger.open {
         display: flex;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         position: absolute;
@@ -379,7 +454,7 @@ img.hover-shadow {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 70%;
+        background-color: white;
         z-index: 1;
         text-transform: uppercase;
 
@@ -402,7 +477,33 @@ img.hover-shadow {
         display: flex;
         flex-direction: column;
     }
+
+    .display ul{
+        flex-direction: column-reverse;
+    }
+
     /* fin menu burger */
+
+    /*index */
+
+    .index-title{
+        padding-top: 0rem;
+    }
+
+    .index-title img{
+        width: 95%;
+        height: 40vh;
+    }
+
+    .sec-infos{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin-top: 0rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .card-boat{
         flex-direction: column;
         justify-content: center;
@@ -417,11 +518,16 @@ img.hover-shadow {
         padding: 0;
     }
 
-    /* About */
-    .about h1 {
-        font-size: 2.5rem;
+    .sec-video iframe{
+        width: 80%;
+        height: 60vh;
     }
 
+    /* About */
+
+    .about{
+        margin-top: 0;
+    }
 
     /* Contact */
     .sec-contact{
@@ -429,7 +535,7 @@ img.hover-shadow {
     }
     .sec-contact h1{
         padding: 0;
-        font-size: 2.5rem;
+
     }
 
     .contact-info{
@@ -454,6 +560,13 @@ img.hover-shadow {
         flex-direction: column;
     }
 
+    .map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     /*Gallery */
     .row{
         padding-top: 0rem;
@@ -462,4 +575,12 @@ img.hover-shadow {
         margin-right: 0rem;
     }
 
+    .gallery h1{
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    .gallery h3{
+        margin-left: 2rem;
+    }
 }
