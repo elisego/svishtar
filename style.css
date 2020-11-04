@@ -66,7 +66,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 }
 
 .display ul li a, .display ul li a:link, .display ul li a:visited, .display ul li a:focus, .display ul li a:active{
-    color: black;
+    color: yellow;
 }
 
 .index-title{
@@ -130,7 +130,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     background-color: #2F3131;
     color: #F8F1E5;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items:center;
     margin-top: 1rem;
 }
@@ -146,7 +146,6 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     align-items:center;
     flex-direction: column;
     margin-top: 5rem;
-
 }
 
 .card-boat{
@@ -157,6 +156,8 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 
 .card-boat-image{
     width: 55%;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
 }
 .card-boat-text {
     width: 40%;
@@ -169,6 +170,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 .card-boat-image img{
     width: 100%;
     padding: 1rem;
+    max-height: 70vh;
 }
 
 /*Gallery */
