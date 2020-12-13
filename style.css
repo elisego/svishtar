@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@200&family=Noto+Sans+SC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 *{
     margin: 0;
@@ -7,32 +7,36 @@
 
 h1{
     font-size: 3.5rem;
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    padding-top: 1rem;
 }
 
 h2{
     font-size: 2rem;
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 h3{
     font-size: 1.5rem;
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 h4{
     font-size: 1rem;
     font-style: italic;
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 p{
     font-size: 1.1rem;
     margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 
 td{
     font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu-burger:first-child{
@@ -40,7 +44,7 @@ td{
 }
 
 .menu-burger{
-    background-color: #426E86;
+    background-color: #C9DFEC;
     font-size: 2rem;
     font-family: 'Noto Sans SC', sans-serif;
     list-style-type: none;
@@ -52,25 +56,30 @@ td{
 
 .display ul{
     display: flex;
-    justify-content: space-around;
-    background-color: #BBC8CA;
+    background-color: #F4661B;
     font-size: 1.2rem;
     list-style: none;
+    justify-content: space-between;
+    line-height: 1.8rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
 }
 
 .navBarre{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-end;
-    line-height: 3rem;
+    line-height: 3.5rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
 }
 
 a, a:link, a:visited, a:focus, a:hover, a:active{
-    color: #F8F1E5;
+    color: black;
 }
 
 .display ul li a, .display ul li a:link, .display ul li a:visited, .display ul li a:focus, .display ul li a:active{
-    color: yellow;
+    color: #C9DFEC;
 }
 
 .index-title{
@@ -81,7 +90,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     padding-top: 5rem;
 }
 
-.index-title h1, h2{
+.index-title h1{
     text-align: center;
 }
 
@@ -115,7 +124,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 }
 
 .date{
-    width: 4.5rem;
+    width: 5rem;
 }
 
 .sec-video{
@@ -135,12 +144,16 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     height: 70vh;
 }
 .sec-footer{
-    background-color: #2F3131;
+    background-color: #F4661B;
     color: #F8F1E5;
     display: flex;
     justify-content: space-evenly;
     align-items:center;
     margin-top: 1rem;
+}
+
+.sec-footer a,.sec-footer a:link,.sec-footer a:visited,.sec-footer a:focus,.sec-footer a:hover,.sec-footer a:active{
+    color: white;
 }
 
 .sec-footer p{
@@ -160,6 +173,10 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     display: flex;
     justify-content: space-between;
     width: 80%;
+}
+
+.card-boat ul li{
+    font-size: 1.1rem;
 }
 
 .card-boat-image{
@@ -188,7 +205,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 /*Gallery */
 
 .gallery h1{
-    margin-top: 5rem;
+    margin-top: 4rem;
     text-align: center;
 }
 
@@ -339,8 +356,6 @@ img.hover-shadow {
 }
 
 .sec-contact h1{
-    padding-top: 3rem;
-
     font-family: 'Noto Sans SC', sans-serif;
 }
 
@@ -357,7 +372,7 @@ img.hover-shadow {
 }
 
 .button{
-    background-color: #426E86;
+    background-color: #F4661B;
     font-size: 1.5rem;
     margin: 1rem;
     padding: 1rem;
@@ -553,7 +568,6 @@ img.hover-shadow {
     }
     .sec-contact h1{
         padding: 0;
-
     }
 
     .contact-info{
