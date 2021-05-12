@@ -436,7 +436,7 @@ img.hover-shadow {
         margin-right: 1rem;
     }
     .btn-burger span {
-        width: 100%;
+        width: 99%;
         height: 0.3rem;
         border-radius: 10px;
         background-color: black;
@@ -450,7 +450,7 @@ img.hover-shadow {
     .btn-burger span::before, .btn-burger span::after {
         content: '';
         position: absolute;
-        width: 100%;
+        width: 99%;
         height: 0.3rem;
         background-color: black;
         transition: transform 0.5s ease-in-out;
